@@ -38,3 +38,6 @@
     setup github, + relativ path
     kubectl apply -f application.yaml
 
+    Test (endpoint is reacable) minikube service flask-app-sap-service -n myflaskapp-namespace   (/read_file)
+    Push commit to git (change replicaset from 2-3) -> check argocd UI -> argocd apply the change automatically
+
