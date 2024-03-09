@@ -1,0 +1,12 @@
+name: flask-app-sap
+
+replicaCount: 2
+
+configMapMountPath: /path/to/mount
+
+configMapData:
+  exampletxt: |
+    Hello from ConfigMap!
+    123
+    hhh88
+  fileName: "custom.txt"
