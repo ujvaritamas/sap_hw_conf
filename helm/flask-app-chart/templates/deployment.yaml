@@ -16,7 +16,7 @@ spec:
       - name: {{ .Values.name }}-cont
         image: tamasujvari/flask-app-sap:latest
         ports:
-        - containerPort: 8080
+        - containerPort: {{ .Values.app.port }}
         env:
         - name: FILE_PATH
           value: "{{ .Values.configMapMountPath }}/{{ .Values.configMapData.fileName }}" #"/test/exampledir/example.txt"

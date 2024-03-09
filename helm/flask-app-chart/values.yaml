@@ -10,3 +10,8 @@ configMapData:
     123
     hhh88
   fileName: "custom.txt"
+
+app:
+  port:8080
+service:
+  port:8081
