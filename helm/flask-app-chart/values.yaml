@@ -15,3 +15,5 @@ app:
   port: 8080
 service:
   port: 8081
+
+image: tamasujvari/flask-app-sap:latest

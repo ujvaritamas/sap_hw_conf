@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: {{ .Values.name }}-cont
-        image: tamasujvari/flask-app-sap:latest
+        image: {{ .Values.image }}
         ports:
         - containerPort: {{ .Values.app.port }}
         env:
