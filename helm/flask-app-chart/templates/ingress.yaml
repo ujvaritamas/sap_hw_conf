@@ -4,7 +4,8 @@ metadata:
   name: flask-app-sap-ingress
 spec:
   rules:
-  - http:
+  - host: "foo.bar.com"
+    http:
       paths:
       - path: /read_file
         pathType: Prefix
