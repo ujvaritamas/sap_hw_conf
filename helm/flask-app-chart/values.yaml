@@ -1,6 +1,6 @@
 name: flask-app-sap
 
-replicaCount: 2
+replicaCount: 3
 
 configMapMountPath: /path/to/mount
 
