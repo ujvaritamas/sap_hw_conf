@@ -9,6 +9,7 @@ configMapData:
     Hello from ConfigMap!
     123
     hhh88
+    dev1
   fileName: "custom.txt"
 
 app:
