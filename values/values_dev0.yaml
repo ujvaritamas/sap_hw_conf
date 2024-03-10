@@ -1,20 +1,21 @@
 name: flask-app-sap
 
-replicaCount: 2
+replicas: 2
 
-configMapMountPath: /path/to/mount
+configmap:
+  configmap_mountpath: /path/to/mountdev0
+  configmap_data:
+    content: |
+      Hello from ConfigMap!
+      123
+      hhh88
+      dev0
+    filename: "customdev0.txt"
 
-configMapData:
-  exampletxt: |
-    Hello from ConfigMap!
-    123
-    hhh88
-    dev0
-  fileName: "custom.txt"
 
-app:
+flask_app:
   port: 8080
+  image: tamasujvari/flask-app-sap:latest
+
 service:
   port: 8081
-
-image: tamasujvari/flask-app-sap:latest
