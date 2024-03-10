@@ -6,8 +6,8 @@ configure_argo:
 	kubectl apply -f application.yaml
 
 delete_argo:
-	kubectl delete namespace argocd
 	kubectl delete all --all -n argocd
+	kubectl delete namespace argocd
 
 open_argoui:
 	minikube service argocd-server -n argocd
